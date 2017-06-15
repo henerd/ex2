@@ -16,7 +16,7 @@ import org.springframework.stereotype.Repository;
 import com.henerd.utill.DBConnector;
 import com.henerd.utill.RowMaker;
 
-@Repository
+@Repository("notice")
 //NoticeDAO noticeDAO = new NoticeDAO();
 public class NoticeDAO {
 	

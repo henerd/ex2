@@ -6,6 +6,8 @@
 </head>
 
 <body>
+<a href="notice/noticeList">Click</a>
+
 <h1>MasterADDDDDDDDDD!!!!!!!!!!!!!!!!!!!!</h1>
 <h1>MasterADD2</h1>
 <h1>

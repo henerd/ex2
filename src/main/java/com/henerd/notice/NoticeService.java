@@ -4,6 +4,8 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import com.henerd.utill.PageMaker;
 
@@ -12,9 +14,14 @@ import com.henerd.utill.PageMaker;
 public class NoticeService {
 	
 	
-	@Inject
+	@Autowired
+	@Qualifier("notice")
 	private NoticeDAO noticeDAO;
 	
+	
+	public void test(){
+		System.out.println(noticeDAO+": dao");
+	}
 	//View
 	public NoticeDTO noticeView(int num)throws Exception{
 		return noticeDAO.noticeView(num);

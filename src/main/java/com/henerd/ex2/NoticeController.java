@@ -22,6 +22,12 @@ public class NoticeController {
 	@Inject //noticeService 타입을 찾아서 inject해라
 	private NoticeService noticeService;
 	
+	@RequestMapping(value="test")
+	public void test(){
+		System.out.println(noticeService+": 안떠요");
+		noticeService.test();
+	}
+	
 	@RequestMapping(value="notice/noticeList", method=RequestMethod.GET)
 	public void list(Model model, @RequestParam(defaultValue="1") Integer curPage)throws Exception{
 		List<NoticeDTO> ar = noticeService.noticeList(curPage);

@@ -19,12 +19,9 @@
 
 	<ul>
 		<li>WTFD</li>
-<<<<<<< HEAD
 		<li>MASTER</li>
-=======
 		<li>Bug_fix_1</li>
 		<li>BF_2</li>
->>>>>>> BugFix_1
 	
 	</ul>
 </body>

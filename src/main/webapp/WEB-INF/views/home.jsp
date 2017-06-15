@@ -23,6 +23,7 @@
 		<li>Bug_fix_1</li>
 		<li>BF_2</li>
 		<li>master_1</li>
+		<li>conflict_1</li>
 	</ul>
 </body>
 </html>

@@ -43,8 +43,8 @@ public class NoticeController {
 	
 	
 	@RequestMapping(value="notice/noticeWrite", method=RequestMethod.GET)
-	public void write(){
-		
+	public void write(Model model){
+		model.addAttribute("path", "write");
 	}
 	
 	@RequestMapping(value="notice/noticeWrite", method=RequestMethod.POST)
@@ -60,9 +60,11 @@ public class NoticeController {
 	
 	
 	@RequestMapping(value="notice/noticeUpdate", method=RequestMethod.GET)
-	public void update(Integer num,Model model)throws Exception{
+	public String update(Integer num,Model model)throws Exception{
 		NoticeDTO noticeDTO = noticeService.noticeView(num);
 		model.addAttribute("dto", noticeDTO);
+		model.addAttribute("path", "update");
+		return "notice/noticeWrite";
 	}
 	
 	@RequestMapping(value="notice/noticeUpdate", method=RequestMethod.POST)

@@ -8,11 +8,12 @@
 </head>
 <body>
 <h2>Write</h2>
-<form action="" method="post">
-<p>제목 : <input type="text" name="title"></p>
-<p>작성자 : <input type="text" name="writer"></p>
-<p>내용 : <input type="text" name="contents"></p>
-<button>다음</button>
+<form action="notice${path }" method="post">
+<input type="hidden" name="num" value="${dto.num}">
+	<p>t : <input type="text" name="title" value="${dto.title }"></p>
+	<p>w : <input type="text" name="writer" value="${dto.writer }"></p>
+	<p>c : <input type="text" name="contents" value="${dto.contents }"></p>d
+<button>write</button>
 </form>
 </body>
 </html>
